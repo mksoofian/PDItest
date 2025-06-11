@@ -82,7 +82,7 @@ function App() {
   useEffect(() => {
     const debouncer = setTimeout(() => {
       setInput(debounced);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(debouncer);
   }, [debounced]);
